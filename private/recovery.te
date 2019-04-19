@@ -1,3 +1,10 @@
 recovery_only(`
-  allow recovery citadel_device:chr_file rw_file_perms;
+allow recovery citadel_device:chr_file rw_file_perms;
+allow recovery ctl_interface_start_prop:property_service set;
+allow recovery exported2_default_prop:property_service set;
+allow recovery exported_system_radio_prop:property_service set;
+allow recovery exported_vold_prop:property_service set;
+allow recovery hidl_base_hwservice:hwservice_manager add;
+allow recovery hwservicemanager_prop:property_service set;
+allow recovery vendor_tee_listener_prop:property_service set;
 ')
