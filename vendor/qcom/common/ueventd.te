@@ -18,3 +18,5 @@ allow ueventd firmware_file:file r_file_perms;
 allow ueventd tmpfs:blk_file getattr;
 allow ueventd persist_file:dir search;
 allow ueventd persist_file:file r_file_perms;
+allow ueventd vfat:dir r_dir_perms;
+allow ueventd vfat:file r_file_perms;
