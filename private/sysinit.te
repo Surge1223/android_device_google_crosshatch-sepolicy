@@ -1,0 +1,7 @@
+typeattribute sysinit coredomain;
+
+init_daemon_domain(sysinit)
+
+userdebug_or_eng(`
+  permissive sysinit;
+')

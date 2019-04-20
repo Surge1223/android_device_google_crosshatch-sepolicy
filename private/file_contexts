@@ -1,1 +1,2 @@
 /system/bin/preloads_copy\.sh   u:object_r:preloads_copy_exec:s0
+/system/bin/sysinit             u:object_r:sysinit_exec:s0
