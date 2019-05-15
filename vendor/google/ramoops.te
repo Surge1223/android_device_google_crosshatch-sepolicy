@@ -16,3 +16,4 @@ allow ramoops sysfs_pstore:file rw_file_perms;
 allow ramoops ramoops_device:chr_file rw_file_perms;
 allow ramoops ramoops_vendor_data_file:file create_file_perms;
 allow ramoops ramoops_vendor_data_file:dir rw_dir_perms;
+allow ramoops vendor_data_file:file r_file_perms;
