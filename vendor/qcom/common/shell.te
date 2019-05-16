@@ -1,2 +1,5 @@
 # To allow non-root to find power_supply management info
 allow shell sysfs_msm_subsys:dir search;
+
+# To allow shell to read logs
+allow shell kernel:system syslog_read;
