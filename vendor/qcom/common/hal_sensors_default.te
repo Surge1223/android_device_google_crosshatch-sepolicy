@@ -22,6 +22,7 @@ allow hal_sensors_default sensors_vendor_data_file:file create_file_perms;
 # needed by elmyra_raw.cpp
 allow hal_sensors_default chre:unix_stream_socket connectto;
 allow hal_sensors_default chre_socket:sock_file write;
+allow hal_sensors_default diag_device:chr_file rw_file_perms;
 
 dontaudit hal_sensors_default kernel:system module_request;
 
@@ -29,5 +30,3 @@ dontaudit hal_sensors_default kernel:system module_request;
 r_dir_file(hal_sensors_default, sysfs_batteryinfo)
 
 r_dir_file(hal_sensors_default, adsprpcd_file)
-
-allow hal_sensors_default diag_device:chr_file { read write };

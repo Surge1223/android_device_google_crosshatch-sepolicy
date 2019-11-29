@@ -22,3 +22,9 @@ allow init sysfs_poweroff:file w_file_perms;
 allow init sysfs_thermal:file w_file_perms;
 
 allow init hal_sensors_default:process noatsecure;
+
+allow init pstorefs:dir mounton;
+allow init self:socket { create read };
+dontaudit init subsystem_ramdump_exec:file x_file_perms;
+allow init sysfs_msm_subsys:file r_file_perms;
+allow init sysfs_msm_subsys_restart:file r_file_perms;
